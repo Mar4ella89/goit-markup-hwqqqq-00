@@ -1,0 +1,362 @@
+:root {
+  --primary-color: #212121;
+  --secondary-color: #757575;
+  --tertiary-color: #ffffff;
+  --accent-color: #2196f3;
+
+  --primary-font-family: Roboto, sans-serif;
+  --secondary-font-family: Raleway, sans-serif;
+
+  --normal-font-weight: 400;
+  --bold-font-weight: 700;
+
+  --normal-font-size: 14px;
+  --large-font-size: 16px;
+  --logo-font-size: 26px;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  font-size: var(--normal-font-size);
+  font-weight: var(--normal-font-weight);
+  font-style: normal;
+
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+.content {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* Шапка с контактами и навигацией */
+.header {
+  display: flex;
+  padding: 25px 0px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+}
+
+.header-logo,
+.footer-logo {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--logo-font-size);
+  line-height: 1.19;
+  text-decoration: none;
+  color: #000000;
+
+  margin-right: 95px;
+}
+
+.header-logo-part,
+.footer-logo-part {
+  color: var(--accent-color);
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.menu-item {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.menu-item:first-child {
+  margin-right: 50px;
+}
+
+.menu-item:last-child {
+  margin-left: 50px;
+}
+
+.menu-list-address {
+  padding-left: 0px;
+  margin-left: 287px;
+}
+
+.menu-item-address {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-left: 50px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.current-link {
+  color: var(--accent-color);
+}
+
+.menu-list-address {
+  display: flex;
+  list-style: none;
+}
+
+/* Секция заказа услуг */
+
+.menu-order {
+  background-color: #2f303a;
+  padding: 200px 0px;
+  margin-bottom: 95px;
+}
+
+.header-order {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  color: var(--tertiary-color);
+
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.order-button {
+  background-color: var(--accent-color);
+  color: var(--tertiary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  margin: auto;
+
+  font-weight: var(--bold-font-weight);
+  font-size: var(--large-font-size);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Преимущества компании */
+
+.title-advantage-company {
+  display: none;
+}
+
+.advantage-list {
+  display: flex;
+  list-style: none;
+  padding: 0px 0px;
+  margin-bottom: 95px;
+}
+
+.advantage-item {
+  width: 25%;
+}
+
+.header-advantage-company {
+  font-weight: var(--bold-font-weight);
+  font-size: var(--normal-font-size);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+}
+
+.advantage-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
+}
+/* Тип услуг */
+
+.header-work {
+  font-weight: var(--bold-font-weight);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+}
+
+.work-list {
+  display: flex;
+  list-style: none;
+  padding: 0px 0px;
+  margin-bottom: 95px;
+}
+
+.work-item:first-child {
+  margin-right: 30px;
+}
+
+.work-item:last-child {
+  margin-left: 30px;
+}
+
+/* Команда компании */
+
+.team-section {
+  background-color: #f5f4fa;
+  padding-top: 95px;
+  padding-bottom: 125px;
+}
+
+.title-team {
+  font-weight: var(--bold-font-weight);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin: 0px 0px;
+
+  color: var(--primary-color);
+}
+
+.team-list {
+  display: flex;
+  list-style: none;
+  padding: 0px 0px;
+}
+
+.team-item {
+  width: 25%;
+  padding-bottom: 30px;
+  text-align: center;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.img-team {
+  margin-bottom: 30px;
+}
+
+.header-team {
+  font-weight: 500;
+  font-size: var(--large-font-size);
+  line-height: 1.18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+  margin: 0px 0px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.team-text {
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px 0px;
+
+  color: var(--secondary-color);
+  background-color: #ffffff;
+}
+/* Футер сайта */
+
+.footer-logo {
+  color: #ffffff;
+}
+
+.footer-menu {
+  background-color: #2f303a;
+  padding: 60px 0px;
+}
+
+.footer-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.footer-menu-link {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-link {
+  color: var(--tertiary-color);
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--accent-color);
+}
+
+/* Потфолио */
+
+.filter-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.filter-item {
+  text-align: center;
+}
+
+.filter-button {
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0px;
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: var(--large-font-size);
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+}
+
+.img-list {
+  list-style: none;
+  /* display: flex; */
+  margin-bottom: 95px;
+}
+
+.img-item {
+  width: 33.33%;
+}
+
+.img-header {
+  font-weight: var(--bold-font-weight);
+  font-size: 18px;
+  line-height: 0.5;
+
+  letter-spacing: 0.06em;
+  color: var(--primary-color);
+}
+
+.img-text {
+  font-size: var(--large-font-size);
+  line-height: 0.53;
+
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
